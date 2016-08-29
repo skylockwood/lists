@@ -19,7 +19,7 @@ class UsersController < ApplicationController
       		redirect_to songs_path
       	else
       		flash[:errors] = @user.errors.full_messages
-      		redirect_to main_path
+      		redirect_to "/"
       	end
 	end
 

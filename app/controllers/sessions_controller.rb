@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       		redirect_to songs_path notice: "User successfully updated!"
     	else
 
-      		redirect_to new_session_path, notice: "Invalid Credentials"
+      		redirect_to "/", notice: "Invalid Credentials"
     	end
 	end
 
